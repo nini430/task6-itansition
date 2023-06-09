@@ -408,7 +408,7 @@ pe.version="2.29.4";aX(Ct);pe.fn=ne;pe.min=GQ;pe.max=KQ;pe.now=qQ;pe.utc=Io;pe.u
     border:1px solid gray;
     padding:5px;
     border-radius:5px;
-`,pee=()=>{const[e,t]=c.useState(""),[n,r]=c.useState(null),o=_b(),i=U$(),{userName:a,userId:s}=Hp(l=>l.user);return c.useEffect(()=>{a||i("/welcome")},[i,a]),c.useEffect(()=>(n||r(ld("http://localhost:8900",{query:{userId:s}})),()=>{n.disconnect()}),[n,s]),c.useEffect(()=>{console.log("receive1"),n==null||n.on("receive-message",({message:l})=>{e&&l.message.from&&e&&o(aq(l))})},[n,o,e]),Ae.jsxs(mee,{children:[Ae.jsxs(gee,{children:[Ae.jsxs(vee,{children:[a,Ae.jsx(xp,{onClick:()=>{o(iq())},children:"Log Out"})]}),Ae.jsx(rX,{setSelectedUser:t,socket:n})]}),Ae.jsx(aee,{})]})},mee=Kt.div`
+`,pee=()=>{const[e,t]=c.useState(""),[n,r]=c.useState(null),o=_b(),i=U$(),{userName:a,userId:s}=Hp(l=>l.user);return c.useEffect(()=>{a||i("/welcome")},[i,a]),c.useEffect(()=>(n||r(ld("http://localhost:8900",{query:{userId:s}})),()=>{n.disconnect()}),[]),c.useEffect(()=>{console.log("receive1"),n==null||n.on("receive-message",({message:l})=>{e&&l.message.from&&e&&o(aq(l))})},[n,o,e]),Ae.jsxs(mee,{children:[Ae.jsxs(gee,{children:[Ae.jsxs(vee,{children:[a,Ae.jsx(xp,{onClick:()=>{o(iq())},children:"Log Out"})]}),Ae.jsx(rX,{setSelectedUser:t,socket:n})]}),Ae.jsx(aee,{})]})},mee=Kt.div`
   width: 100vw;
   height: 100vh;
   display: flex;

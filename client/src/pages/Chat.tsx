@@ -28,7 +28,7 @@ const Chat = () => {
     return ()=>{
       socket.disconnect();
     }
-  }, [socket, userId]);
+  }, []);
 
   useEffect(() => {
     console.log('receive1');
