@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(215, 250, 215);
+}
+
+.input {
+  width:20%;
+  padding:10px;
+}
