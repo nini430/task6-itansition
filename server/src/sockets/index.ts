@@ -13,7 +13,7 @@ const ioListen = (io: InstanceType<typeof Server>) => {
       activeUsers.set(userId, socket);
     }
 
-    socket.on('send-message', ({ message }) => {
+    socket.on('send-message', ({ message }:any) => {
         socket
         .to(activeUsers.get(message.message.to).id)
           .emit('receive-message', { message });
