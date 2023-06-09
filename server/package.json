@@ -9,6 +9,9 @@
     "start":"node dist/server.js"
   },
   "keywords": [],
+  "resolutions": {
+    "increase-node-memory": "--max-old-space-size=4096"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
