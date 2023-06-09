@@ -23,7 +23,7 @@ const Chat = () => {
   }, [navigate, userName]);
   useEffect(() => {
     if (!socket) {
-      setSocket(io('http://localhost:8900', { query: { userId } }));
+      setSocket(io('https://email-system-w3fe.onrender.com', { query: { userId } }));
     }
     return ()=>{
       socket.disconnect();
