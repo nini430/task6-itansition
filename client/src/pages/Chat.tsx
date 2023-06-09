@@ -25,10 +25,7 @@ const Chat = () => {
     if (!socket) {
       setSocket(io('https://email-system-w3fe.onrender.com', { query: { userId } }));
     }
-    return ()=>{
-      socket.disconnect();
-    }
-  }, []);
+  }, [socket,userId]);
 
   useEffect(() => {
     console.log('receive1');
