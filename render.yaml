@@ -1,0 +1,11 @@
+version: 1
+build:
+  - name: client
+    env: node
+    buildCommand: cd client && npm install && npm run build
+    publishDir: client/dist
+  - name: server
+    env: node
+    buildCommand: cd server && npm install
+    startupCommand: cd server && npm start
+    startupCommand: cd server && npm start
