@@ -25,6 +25,9 @@ const Chat = () => {
     if (!socket) {
       setSocket(io('http://localhost:8900', { query: { userId } }));
     }
+    return ()=>{
+      socket.disconnect();
+    }
   }, [socket, userId]);
 
   useEffect(() => {
